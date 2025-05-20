@@ -1,0 +1,64 @@
+/* GENERAL */
+* {
+	font-family: 'SauceCodePro NF';
+	border-radius: 5px;
+    min-height: 0;
+  }
+
+window#waybar {
+    background-color: rgba(29, 32, 33, 0.295);
+}
+
+#clock{
+	color:#d3c6aa;
+	background: rgba(29, 32, 33, 0.350);
+    font-size: 25px; 
+}
+#disk{
+	color: #d3c6aa;
+	background: rgba(29, 32, 33, 0.550);
+	padding-bottom: 10px;
+	padding-right: 10px;
+    font-size: 30px; 
+}
+
+#cpu{
+	color: #d3c6aa;
+	background: rgba(29, 32, 33, 0.550);
+	padding-bottom: 20px;
+    margin-left: 5px;
+    font-size: 20px; 
+}
+
+#temperature{
+	color: #d3c6aa;
+	background: rgba(29, 32, 33, 0.550);
+	padding-bottom: 20px;
+    margin-left: 5px;
+    font-size: 20px; 
+}
+
+#memory{
+	color: #d3c6aa;
+	background: rgba(29, 32, 33, 0.550);
+	padding-bottom: 40px;
+    margin-left: 5px;
+    font-size: 20px; 
+}
+
+#workspaces button {
+	border: none;
+	box-shadow: none;
+    text-shadow: none;
+    padding-right: 12px;
+    font-size: 25px; 
+}
+
+#workspaces button.active{
+	color: #7FBBB3;
+	background: rgba(29, 32, 33, 0.5);
+    padding-right: 15px;
+    font-size: 30px; 
+}
+
+
