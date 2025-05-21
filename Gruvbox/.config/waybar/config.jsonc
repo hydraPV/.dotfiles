@@ -33,9 +33,10 @@
 
     // Clock Module
     "clock": {
-      "format": "{:%H\n%M}",
-      "tooltip": "true",
-      "tooltip-format": "{:%d-%m}",
+        "interval": 60,
+        "format": "{:%H\n%M}",
+        "format-alt": "{:%d\n%m}",
+        "on-click": "toggle"
     },
 
     // Disk Module
