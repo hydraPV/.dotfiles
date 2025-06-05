@@ -23,9 +23,9 @@ vimconf.cursorline = true
 vimconf.fillchars = {eob = ' '}
 
 -- Set <tab> space
-vimconf.tabstop = 2
-vimconf.shiftwidth = 2
-vimconf.softtabstop = 2
+vimconf.tabstop = 4
+vimconf.shiftwidth = 4
+vimconf.softtabstop = 4
 vimconf.expandtab = true
 -------------------------------------------------
 -- Map <leader>
@@ -64,7 +64,7 @@ map('n', '<leader>nh', ':noh<CR>', opt)
 map('n', '<leader>fh', "<cmd>Telescope help_tags<CR>") -- Search help pages
 map('n', '<leader>fb', "<cmd>Telescope keymaps<CR>", opt) -- View all keybindings
 map('n', '<leader>ff', function() built.find_files({ find_command = fd }) end, opt)
-map('n', '<leader>fg', function() built.live_grep(rg) end, opt) -- Grep files 
+map('n', '<leader>fg', function() built.live_grep({ find_command = rg }) end, opt)
 map('n', '<leader>fr', built.oldfiles) -- Search old files
 map('n', '<leader>fc', function() built.find_files {cwd = vim.fn.stdpath 'config'} end) -- Find files on nvim config
 
