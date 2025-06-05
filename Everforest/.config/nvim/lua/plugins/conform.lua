@@ -8,6 +8,7 @@ return {
                 bash = {'beautysh'},
                 sh = {'beautysh'},
                 cpp = {'clang-format'},
+                c = {'clang-format'},
                 jsonc = {'prettier'},
                 json = {'prettier'}
             },
