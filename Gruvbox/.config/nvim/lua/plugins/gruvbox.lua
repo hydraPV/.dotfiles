@@ -4,8 +4,8 @@ return {
     config = function()
         require('gruvbox').setup({
             terminal_colors = true,
-            transparent_mode = true,
-            contrast = "hard",
+            transparent_mode = false,
+            contrast = "soft",
             palette_overrides = {bright_green = "#fbf1c7"}
         })
         vim.cmd('colorscheme gruvbox')
