@@ -1,17 +1,9 @@
 #!/bin/bash
 
-# Verifies if the terminal is using a Nerd Font
-check_nerd_font() {
-    echo -e "" >/dev/null 2>&1 || {
-        echo " Nerd Font not detected. Please use a terminal with Nerd Fonts"
-        echo " Aborting"
-        exit 1
-    }
-}
-check_nerd_font
-
 # ASCII Art
-cat <<ASCII
+cat << ASCII
+
+
 
 ██████╗ ██╗ ██████╗███████╗
 ██╔══██╗██║██╔════╝██╔════╝
@@ -26,6 +18,8 @@ cat <<ASCII
 ╚════██║██║███╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
 ███████║╚███╔███╔╝██║  ██║██║     ██║     ███████╗██║  ██║
 ╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
+
+
 
 ASCII
 
