@@ -20,6 +20,15 @@ This repository itself, has been my way to learn about git and has been amazing.
 - Bar - **Waybar**
 - App launcher - **Rofi**
 
+## Install
+
+1. git clone https://github.com/hydraPV/.dotfiles
+2. cd .dotfiles/
+3. chmod +x Install.sh
+4. ./Install.sh
+5. Pray that the install script works because i am the greatest coder in earth (bash script)
+- git clone https://github.com/hydraPV/.dotfiles && cd .dotfiles/ && chmod +x Install.sh && ./Install.sh
+
 ## TODO
 - [ ] Add screenshots
 - [x] Make an install script
