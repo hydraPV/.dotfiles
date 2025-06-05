@@ -4,7 +4,7 @@ return {
     config = function()
         require('conform').setup({
             formatters_by_ft = {
-                lua = {'lua-format'},
+                lua = {'stylua'},
                 bash = {'beautysh'},
                 sh = {'beautysh'},
                 cpp = {'clang-format'},
