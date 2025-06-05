@@ -7,6 +7,7 @@ return {
             bash = {'shellcheck'},
             sh = {'shellcheck'},
             cpp = {'cpplint'},
+            c =  {'cpplint'},
             json = {'jsonlint'}
         }
     end
