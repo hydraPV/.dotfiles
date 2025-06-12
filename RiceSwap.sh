@@ -23,6 +23,14 @@ cat << ASCII
 
 ASCII
 
+# Reload function
+Reload() {
+    hyprctl reload &>/dev/null && 
+    killall waybar && waybar &>/dev/null &
+    killall hyprpaper && hyprpaper &>/dev/null &
+    killall mako && mako &>/dev/null &
+}
+
 # General Symlink function
 Symlinks() {
     SOURCE="$1"
@@ -57,9 +65,6 @@ Symlinks() {
     sleep 1
 
     echo "  Swap complete."
-    killall waybar && killall hyprpaper && hyprctl reload
-    waybar & hyprpaper & kitty &
-    exit
 }
 
 
@@ -73,11 +78,19 @@ while true; do
 done
 
 case "$Prompt" in
-    g) Symlinks "$HOME/.dotfiles/Gruvbox/.config/" ;;
-    e) Symlinks "$HOME/.dotfiles/Everforest/.config/" ;;
+    g)
+        Symlinks "$HOME/.dotfiles/Gruvbox/.config/"
+        ln -sf "/usr/share/themes/Gruvbox/gtk-4.0/" "$HOME/.dotfiles/GTK/"
+        Reload
+        sleep 3 && exit ;;
+    e)
+        Symlinks "$HOME/.dotfiles/Everforest/.config/"
+        ln -sf "/usr/share/themes/Everforest/gtk-4.0/" "$HOME/.dotfiles/GTK/"
+        Reload
+        sleep 3 && exit ;;
     *)
         echo "Aborting..."
-        sleep 1
+        sleep 3
         exit 1
         ;;
 esac
