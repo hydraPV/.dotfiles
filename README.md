@@ -1,4 +1,4 @@
-> I am not a coder, there is probably an enormous amount of mistakes in my configs.
+> I am not a programmer, there is probably an enormous amount of mistakes in my configs.
 
 
 # Dotfiles
@@ -26,7 +26,7 @@ This repository itself, has been my way to learn about git and has been amazing.
 2. cd .dotfiles/
 3. chmod +x Install.sh
 4. ./Install.sh
-5. Pray that the install script works because i am the greatest coder in earth (bash script)
+5. Pray that the install script works because i am the greatest programmer in earth (bash script)
 - ```git clone https://github.com/hydraPV/.dotfiles && cd .dotfiles/ && chmod +x Install.sh && ./Install.sh```
 
 ## TODO
