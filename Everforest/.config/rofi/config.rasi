@@ -1,17 +1,9 @@
-/**
- *
- * Author : Aditya Shakya (adi1090x)
- * Github : @adi1090x
- * 
- * Rofi Theme File
- * Rofi Version: 1.7.3
- **/
-
 /*****----- Configuration -----*****/
 configuration {
 	modi:                       "drun,run,filebrowser,window";
-    icon-theme:                 "Everforest-Icons";
     show-icons:                 true;
+    icon-theme:                 "Everforest-Light";
+    icon-route:                 "/usr/share/icons/Everforest-Light/";
     display-drun:               "APPS";
     display-run:                "RUN";
     display-filebrowser:        "FILES";
