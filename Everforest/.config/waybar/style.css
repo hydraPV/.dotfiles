@@ -17,7 +17,7 @@ window#waybar {
 #disk{
 	color: #d3c6aa;
 	background: rgba(29, 32, 33, 0.550);
-	padding-bottom: 10px;
+	padding-bottom: 8px;
 	padding-right: 10px;
     font-size: 30px; 
 }
@@ -25,24 +25,21 @@ window#waybar {
 #cpu{
 	color: #d3c6aa;
 	background: rgba(29, 32, 33, 0.550);
-	padding-bottom: 20px;
-    margin-left: 5px;
+	padding-bottom: 8px;
     font-size: 20px; 
 }
 
 #temperature{
 	color: #d3c6aa;
 	background: rgba(29, 32, 33, 0.550);
-	padding-bottom: 20px;
-    margin-left: 5px;
+	padding-bottom: 8px;
     font-size: 20px; 
 }
 
 #memory{
 	color: #d3c6aa;
 	background: rgba(29, 32, 33, 0.550);
-	padding-bottom: 40px;
-    margin-left: 5px;
+	padding-bottom: 8px;
     font-size: 20px; 
 }
 
@@ -57,7 +54,7 @@ window#waybar {
 #workspaces button.active{
 	color: #7FBBB3;
 	background: rgba(29, 32, 33, 0.5);
-    padding-right: 15px;
+    padding-right: 18px;
     font-size: 30px; 
 }
 

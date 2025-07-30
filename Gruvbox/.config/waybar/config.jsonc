@@ -5,10 +5,10 @@
     // General settings
 
     "position": "right",
-    "margin-right": 10,
-    "margin-top": 10,
-    "margin-bottom": 10,
-
+    "margin-right": 5,
+    "margin-top": 8,
+    "margin-bottom": 8,
+    "width": 44,
     // ------------------------------------------
     // Module placing
 
@@ -48,8 +48,8 @@
 
     // CPU Module
     "cpu": {
-      "interval": 10,
-      "format": "  {usage}",
+      "interval": 1,
+      "format": "  <span color=\"#A89984\">{usage}</span>",
       "tooltip": "true",
       "tooltip-format": "{load}",
     },
@@ -57,14 +57,14 @@
     // Temperature Module
     "temperature": {
       "interval": 1,
-      "hwmon-path": "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon3/temp1_input",
-      "format": " {temperatureC}"
+      "hwmon-path": "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon2/temp1_input",
+      "format": "  <span color=\"#A89984\">{temperatureC}</span>"
     },
 
     // Memory Module
     "memory": {
-      "interval": 10,
-      "format": "  {percentage}",
+      "interval": 1,
+      "format": "󰍛  <span color=\"#A89984\">{percentage}</span>",
       "tooltip": "true",
       "tooltip-format": "{used} / {total}",
     },
