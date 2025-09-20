@@ -21,16 +21,22 @@ case "$MainPrompt" in
         echo
         echo "Creating hostname..."
         echo "Hydra" > /etc/hostname
+        
+        echo 
+        echo "Seting locales..."
+        locale-gen
+        echo "LANG=en_US.UTF-8" > /etc/locale.gen
 
         echo
         echo "Creating user Hydra..."
         pacman -S fish --noconfirm &>/dev/null
-        useradd -m -G wireshark gamemode wheel informant -s /bin/fish Hydra
+        useradd -m -G wheel -s /bin/fish Hydra
+        gpasswd -a Hydra wireshark informant gamemode 
 
         echo
-        echo ""
         echo "Type a password for the host user"
         passwd Hydra
+
         ;;
 
     n) echo "Aborting..." && exit;;
