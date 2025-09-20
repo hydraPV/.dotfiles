@@ -31,12 +31,16 @@ case "$MainPrompt" in
         echo "Creating user Hydra..."
         pacman -S fish --noconfirm &>/dev/null
         useradd -m -G wheel -s /bin/fish Hydra
-        gpasswd -a Hydra wireshark informant gamemode 
 
         echo
         echo "Type a password for the host user"
         passwd Hydra
-
+        
+        echo
+        echo "Installing GRUB"
+        pacman -S grub efibootmgr --noconfirm
+        grub-install --target=x86_64-efi --efi-directory /boot/ --bootloader-id=GRUB
+        grub-mkconfig -o /boot/grub/grub.cfg
         ;;
 
     n) echo "Aborting..." && exit;;
