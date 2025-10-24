@@ -74,6 +74,7 @@
       "format": "{volume}%",
       "scroll-step": 1,
       "on-click": "amixer set Master toggle",
+      "on-click-right": "pavucontrol",
     },
   },
 ]
