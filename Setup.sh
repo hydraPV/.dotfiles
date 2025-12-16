@@ -1,5 +1,7 @@
 #! /bin/bash
 
+# This is basically a test i did for fun and probably won't use it
+
 echo "This is an automated installation script meant to run exactly after chrooting and installing git"
 echo "Are you sure you want to run this script?"
 echo "[Y] | [N]"
