@@ -14,6 +14,7 @@ opt.shiftwidth = 4
 
 opt.fillchars = {eob = ' '}
 opt.clipboard = "unnamedplus"
+opt.signcolumn = "yes:1"
 
 -- Treesitter Highlighting
 vim.api.nvim_create_autocmd('FileType', {
