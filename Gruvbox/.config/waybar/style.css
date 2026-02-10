@@ -1,18 +1,18 @@
-/* GENERAL */
-* {
-	font-family: 'SauceCodePro NF';
-	border-radius: 5px;
-    min-height: 0;
-  }
+*
+{
+	font-family: '0xProto Nerd Font';
+	border-radius: 4px;
+	min-height: 0;
+}
 
 window#waybar {
-    background-color: rgba(29, 32, 33, 0.295);
+	background-color: rgba(29, 32, 33, 0.295);
 }
 
 #clock{
 	color:#fbf1c7;
 	background: rgba(29, 32, 33, 0.350);
-    font-size: 25px; 
+	font-size: 25px; 
 }
 
 #disk{
@@ -20,43 +20,43 @@ window#waybar {
 	background: rgba(29, 32, 33, 0.550);
 	padding-bottom: 8px;
 	padding-right: 10px;
-    font-size: 30px; 
+	font-size: 30px; 
 }
 
 #cpu{
 	color: #fbf1c7;
 	background: rgba(29, 32, 33, 0.550);
 	padding-bottom: 8px;
-    font-size: 20px; 
+	font-size: 20px; 
 }
 
 #temperature{
 	color: #fbf1c7;
 	background: rgba(29, 32, 33, 0.550);
 	padding-bottom: 8px;
-    font-size: 20px; 
+	font-size: 20px; 
 }
 
 #memory{
 	color: #fbf1c7;
 	background: rgba(29, 32, 33, 0.550);
 	padding-bottom: 8px;
-    font-size: 20px; 
+	font-size: 20px; 
 }
 
 #workspaces button {
 	border: none;
 	box-shadow: none;
-    text-shadow: none;
-    padding-right: 12px;
-    font-size: 25px; 
+	text-shadow: none;
+	padding-right: 8px;
+	font-size: 25px; 
 }
 
 #workspaces button.active{
 	color: #fe8019;
 	background: rgba(29, 32, 33, 0.5);
-    padding-right: 18px;
-    font-size: 30px; 
+	padding-right: 14px;
+	font-size: 30px; 
 }
 
 
