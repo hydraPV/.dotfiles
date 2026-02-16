@@ -1,80 +1,61 @@
-// ----------------------------------------------
-// Main bar
-[
-  {
-    // General settings
+{
+	"position": "right",
+	"margin-right": 5,
+	"margin-top": 8,
+	"margin-bottom": 8,
+	"width": 44,
 
-    "position": "right",
-    "margin-right": 5,
-    "margin-top": 8,
-    "margin-bottom": 8,
-    "width": 44,
-    // ------------------------------------------
-    // Module placing
+	"modules-center": ["clock"],
+	"modules-right": ["disk", "cpu", "temperature", "memory", "pulseaudio"],
+	"modules-left": ["hyprland/workspaces"],
 
-    "modules-center": ["clock"],
-    "modules-right": ["disk", "cpu", "temperature", "memory", "pulseaudio"],
-    "modules-left": ["hyprland/workspaces"],
+	"hyprland/workspaces": {
+		"persistent-workspaces": { "*": 6 },
+		"format": "{icon}",
+		"format-icons": {
+			"active": "",
+			"default": ""
+		}
+	},
 
-    // ------------------------------------------
-    // Modules
+	"clock": {
+		"interval": 60,
+		"format": "{:%H\n%M}",
+		"format-alt": "{:%d\n%m}",
+		"on-click": "toggle"
+	},
 
-    // Hyprland Module
-    "hyprland/workspaces": {
-      "persistent-workspaces": {
-        "*": 6,
-      },
-      "format": "{icon}",
-      "format-icons": {
-        "active": "",
-        "default": "",
-      },
-    },
+	"disk": {
+		"interval": 30,
+		"format": "",
+		"path": "/"
+	},
 
-    // Clock Module
-    "clock": {
-        "interval": 60,
-        "format": "{:%H\n%M}",
-        "format-alt": "{:%d\n%m}",
-        "on-click": "toggle"
-    },
+	"cpu": {
+		"interval": 1,
+		"format": " <span color=\"#7A8478\">{usage}</span>",
+		"tooltip": "true",
+		"tooltip-format": "{load}"
+	},
 
-    // Disk Module
-    "disk": {
-      "interval": 30,
-      "format": "",
-      "path": "/",
-    },
+	"temperature": {
+		"interval": 1,
+		"hwmon-path": "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon2/temp1_input",
+		"format": " <span color=\"#7A8478\">{temperatureC}</span>"
+	},
 
-    // CPU Module
-    "cpu": {
-      "interval": 1,
-      "format": "  <span color=\"#7A8478\">{usage}</span>",
-      "tooltip": "true",
-      "tooltip-format": "{load}",
-    },
+	"memory": {
+		"interval": 1,
+		"format": "󰍛 <span color=\"#7A8478\">{percentage}</span>",
+		"tooltip": "true",
+		"tooltip-format": "{used} / {total}"
+	},
 
-    // Temperature Module
-    "temperature": {
-      "interval": 1,
-      "hwmon-path": "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon2/temp1_input",
-      "format": "  <span color=\"#7A8478\">{temperatureC}</span>"
-    },
+	"pulseaudio": {
+		"format": "{volume}%",
+		"scroll-step": 1,
+		"on-click": "amixer set Master toggle",
+		"on-click-right": "pavucontrol"
+	}
+}
 
-    // Memory Module
-    "memory": {
-      "interval": 1,
-      "format": "󰍛  <span color=\"#7A8478\">{percentage}</span>",
-      "tooltip": "true",
-      "tooltip-format": "{used} / {total}",
-    },
-
-    // Pulseaudio module
-    "pulseaudio": {
-      "format": "{volume}%",
-      "scroll-step": 1,
-      "on-click": "amixer set Master toggle",
-    },
-  },
-]
-// ----------------------------------------------
