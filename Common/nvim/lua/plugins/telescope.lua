@@ -21,6 +21,14 @@ return {
 	config = function()
 		telescope = require('telescope.builtin') -- Global variable to use in keybinds.lua
 		require('telescope').setup {
+			pickers = {
+				find_files = {
+					hidden = true
+				},
+				live_grep = {
+					hidden = true
+				}
+			},
 			defaults = {
 				sorting_strategy = "ascending",
 				layout_config = {
