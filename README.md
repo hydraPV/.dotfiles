@@ -32,7 +32,7 @@ This repository itself, has been my way to learn about git and has been amazing.
 ## TODO
 - [ ] Add screenshots
 - [x] Make an install script
-- [ ] Make a shared Neovim directory (No idea how to do this but i need to)
+- [x] Make a shared Neovim directory
 - [ ] Test creating branches
 - [ ] Test creating releases
-- [ ] Get better at commiting
+- [x] Get better at commiting
