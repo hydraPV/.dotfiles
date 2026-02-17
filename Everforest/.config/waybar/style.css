@@ -1,9 +1,9 @@
-/* GENERAL */
-* {
-	font-family: 'SauceCodePro NF';
-	border-radius: 5px;
+*
+{
+	font-family: '0xProto Nerd Font';
+	border-radius: 4px;
     min-height: 0;
-  }
+}
 
 window#waybar {
     background-color: rgba(29, 32, 33, 0.295);
@@ -14,6 +14,7 @@ window#waybar {
 	background: rgba(29, 32, 33, 0.350);
     font-size: 25px; 
 }
+
 #disk{
 	color: #d3c6aa;
 	background: rgba(29, 32, 33, 0.550);
@@ -47,15 +48,13 @@ window#waybar {
 	border: none;
 	box-shadow: none;
     text-shadow: none;
-    padding-right: 12px;
+    padding-right: 8px;
     font-size: 25px; 
 }
 
 #workspaces button.active{
 	color: #7FBBB3;
 	background: rgba(29, 32, 33, 0.5);
-    padding-right: 18px;
+    padding-right: 14px;
     font-size: 30px; 
 }
-
-
