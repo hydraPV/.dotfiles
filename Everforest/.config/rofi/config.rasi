@@ -2,7 +2,7 @@
 configuration {
 	modi:                       "drun,run,filebrowser,window";
     show-icons:                 true;
-    icon-theme:                 "Everforest-Light";
+    icon-theme:                 "Everforest-Icons";
     icon-route:                 "/usr/share/icons/Everforest-Icons/";
     display-drun:               "APPS";
     display-run:                "RUN";
