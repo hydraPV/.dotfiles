@@ -3,7 +3,6 @@ on-button-left=dismiss
 on-button-right=dismiss-all
 on-button-middle=invoke-default-action
 layer=overlay
-background-color=#2e3440
 width=500
 height=230
 border-size=1
