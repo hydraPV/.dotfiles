@@ -4,16 +4,17 @@ return {
 
 	dependencies = {
 		'nvim-lua/plenary.nvim',
-		-- Native fzf on telescope
 		{ 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
-		-- File browser for telescope
+
 		{
 			'nvim-telescope/telescope-file-browser.nvim',
 			require("telescope").setup {
 				extensions = {
 					depth = 2,
-					hidden = { file_browser = false, folder_browser = false },
-				}
+					hidden = { 
+						file_browser = false, folder_browser = false 
+					},
+				},
 			},
 		},
 	},
