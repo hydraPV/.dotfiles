@@ -15,8 +15,16 @@ map('n', '<leader>a', '<cmd>bprev<CR>', opts)
 map('n', '<leader>d', '<cmd>bnext<CR>', opts)
 map('n', '<leader>s', '<cmd>b#<CR>', opts)
 map('n', '<leader>w', '<cmd>bdelete<CR>', opts)
+map('n', '<C-h>', '<C-w>h')
+map('n', '<C-j>', '<C-w>j')
+map('n', '<C-k>', '<C-w>k')
+map('n', '<C-l>', '<C-w>l')
 
 map('n', '<C-^>', '<Nop>') -- Disable <cmd>b# default remap
+
+-- LSP
+map('n', 'gd', vim.lsp.buf.definition, opts)
+map('n', 'gD', vim.lsp.buf.declaration, opts)
 
 -- Telescope
 map('n', '<leader>ff', function()
